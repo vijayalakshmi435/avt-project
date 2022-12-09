@@ -95,3 +95,28 @@ const clas6=()=>{
 }
 
 
+// ------------------loginjs-------------------
+
+
+const show=()=>{
+    let a = document.getElementById('inp1').value;
+    let b = document.getElementById('inp2').value;
+
+    console.log(a,b)
+
+if(a=="vijaya@gmail.com" && b=="vijaya"){
+    alert('sucess')
+}
+else{
+    alert('failed')
+}
+
+}
+
+
+
+
+
+
+
+
