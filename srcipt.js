@@ -105,7 +105,7 @@ const show=()=>{
     console.log(a,b)
 
 if(a=="vijaya@gmail.com" && b=="vijaya"){
-    alert('sucess')
+  window.location.assign('/index.html')
 }
 else{
     alert('failed')
