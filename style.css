@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Noto+Serif:ital@1&display=swap');
+
+
+
 *{
     padding: 0;
     margin: 0;
@@ -10,6 +14,8 @@
     background-position:fixed;
     background-size:cover;
     background-repeat: no-repeat;
+    font-family:'EB Garamond', serif;
+    font-family: 'Noto Serif', serif;
 }
 .header{
     width: 100%;
@@ -36,11 +42,16 @@
     align-items: center;
     justify-content:space-evenly;
     font-size: 22px;
+    
 }
 .content i{
-    color: black;
+    color:orange;
     margin-left: 30px;
     font-size: 30px;
+}
+.content a{
+    text-decoration: none;
+    color: white;
 }
 
 
@@ -56,6 +67,8 @@
     width: 100%;
     height: 450px;
     display: flex;
+    font-family: 'EB Garamond', serif;
+font-family: 'Noto Serif', serif;
 }
 .ab-img{
     width:40%;
@@ -98,12 +111,35 @@
     
 }
 
-button{
+.btn{
     width: 150px;
     height: 35px;
     background-color: black;
     color: white;
     border-radius: 10px;
+    transition: all 0.3s ease-in;
+}
+.btn:hover{
+    background-color: rgb(237, 15, 15);
+    color: black;
+    scale: 1.1;
+}
+.ab-card button a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.ab-card button{
+    width: 150px;
+    height: 35px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    transition: all 0.3s ease-in;
+}
+.ab-card button:hover{
+    background-color: rgb(237, 15, 15);
+    color: black;
+    scale: 1.1;
 }
 
 
@@ -116,6 +152,8 @@ button{
     width: 100%;
     height: 500px;
     display: flex;
+    font-family: 'EB Garamond', serif;
+font-family: 'Noto Serif', serif;
 }
 .about-con{
     width: 60%;
@@ -197,6 +235,7 @@ button{
     background-repeat: no-repeat;
     background-position: fixed;
     background-size: cover;
+    
 }
 .regi-form{
     width:490px;
@@ -260,6 +299,12 @@ button{
     color: white;
     font-size: 25px;
     border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+.btn1:hover{
+    background-color:rgb(177, 174, 174);
+    color: black;
 }
 
 .check{
@@ -306,6 +351,7 @@ button{
     position: relative;
     flex-direction: column;
     justify-content: space-evenly;
+    position: relative;
 }
 
 .span1{
@@ -354,6 +400,9 @@ button{
     background-color: #fff;
     /* display: flex; */
     flex-direction: column;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+
 }
 .onecard img{
     width: 270px;
@@ -376,15 +425,24 @@ button{
     position: absolute;
     margin-top: 290px;
     margin-left: 20px;
+
 }
 .onecard i{
     margin-left: 25px;
+}
+.onecard:hover{
+    scale: 1.1;
+    opacity: 0.7;
+   
+    
 }
 .twocard{
     width: 270px;
     height: 320px;
     border-radius: 12px;
     background-color: #fff;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
 }
 .twocard img{
     width: 270px;
@@ -411,12 +469,18 @@ button{
 .twocard i{
     margin-left: 25px;
 }
+.twocard:hover{
+    scale: 1.1;
+    opacity: 0.7;
+}
 .threecard{
     width: 270px;
     height: 320px;
     border-radius: 12px;
     background-color: #fff;
     position:relative;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
 }
 .threecard img{
     width: 270px;
@@ -443,6 +507,10 @@ button{
 .threecard i{
     margin-left: 25px;
 }
+.threecard:hover{
+    scale: 1.1;
+    opacity: 0.7;
+}
 
 
 
@@ -460,6 +528,8 @@ button{
     height: 320px;
     border-radius: 12px;
     background-color: #fff;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
 }
 .fourcard img{
     width: 270px;
@@ -487,11 +557,17 @@ button{
 .fourcard i{
     margin-left: 25px;
 }
+.fourcard:hover{
+    scale: 1.1;
+    opacity: 0.7;
+}
 .fivecard{
     width: 270px;
     height: 320px;
     border-radius: 12px;
     background-color: #fff;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
 }
 .fivecard img{
     width: 270px;
@@ -519,12 +595,18 @@ button{
 .fivecard i{
     margin-left: 25px;
 }
+.fivecard:hover{
+    scale: 1.1;
+    opacity: 0.7;
+}
 .sixcard{
     width: 270px;
     height: 320px;
     border-radius: 12px;
     background-color: #fff;
     position:relative;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
 }
 .sixcard img{
     width: 270px;
@@ -552,4 +634,27 @@ button{
 .sixcard i{
     margin-left: 25px;
 }
+.sixcard:hover{
+    scale: 1.1;
+    opacity: 0.7;
+    
+}
 
+
+
+.popup{
+    width: 100%;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+.inner{
+    width: 20%;
+    height: 40%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -11,13 +11,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css" integrity="sha512-giQeaPns4lQTBMRpOOHsYnGw1tGVzbAIHUyHRgn7+6FmiEgGGjaG0T2LZJmAPMzRCl+Cug0ItQ2xDZpTmEc+CQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <section class="home-sec">
+    <section id="home" class="home-sec">
         <div class="header">
-            <div class="logo"><i class="fa-solid fa-plane"></i> Aviation</div>
+            <div class="logo"><i class="fa-solid fa-plane" ></i> Aviation</div>
             <div class="content">
-                <span>Home</span>
-                <span>Contact</span>
-                <span>About<i class="fa-solid fa-bars"></i></span>
+                <span><a href="#home">Home</a></span>
+                <span><a href="#contact">Contact</a></span>
+                <span><a href="#about">About</a><i class="fa-solid fa-bars"></i></span>
             </div>
         </div>
     </section>
@@ -25,7 +25,7 @@
     
     
     
-    <section class="about-sec">
+    <section id="about" class="about-sec">
         <div class="ab-img">
             <img src="https://media.istockphoto.com/id/93376590/photo/pilots-in-the-cockpit.jpg?s=612x612&w=0&k=20&c=u_cCq0bJiTdLtDUk_LOTzlvUioZa3bC4LBhsTNt3jaI=" alt="">
         </div>
@@ -33,7 +33,8 @@
             <div class="ab-card">
                 <h1>About us</h1>
                 <span>Arrow Aviation Services,since its inception in 2001 has grown fast to become one of the <br> leading distributor of Aircroft spare parts</span>
-                <button>JOIN-NOW</button>
+                <button class="btn"><a href="#contact"> JOIN-NOW</a></button>
+                <button><a href="#home"> Back</a></button>
             </div>
         </div>
     </section>
@@ -64,37 +65,49 @@
     
     
     
-    <section class="contact-sec">
+    <section id="contact" class="contact-sec">
         <div class="regi-form">
             <div class="form">
                 <span class="info"><h1>Registration</h1></span>
                 <span class="form-info">subscribe now to receive exclusive information and updated </span>
                 <span class="in-1">
-                    <input type="text" placeholder="First Name(eg:Jhon)">
-                    <input type="text" placeholder="Last Name(eg:michel)">
+                    <input type="text" id="in1" placeholder="First Name(eg:Jhon)">
+                    <input type="text" id="in2" placeholder="Last Name(eg:michel)">
                     
                 </span>
-                <input class="in-2" type="text" placeholder="E-mail(eg:mamillavijayalakshmi789@gmail.com)">
-                <input class="in-3" type="text" placeholder="Location(eg:bangalore)">
-                <input class="in-4" type="text" placeholder="Qualifications(eg:B.Tech.M.com)">
-                <input class="in-5" type="text" placeholder="About you">
+                <input class="in-2" id="in3" type="text" placeholder="E-mail(eg:mamillavijayalakshmi789@gmail.com)">
+                <input class="in-3" id="in4" type="text" placeholder="Location(eg:bangalore)">
+                <input class="in-4" id="in5" type="text" placeholder="Qualifications(eg:B.Tech.M.com)">
+                <input class="in-5" id="in6" type="text" placeholder="About you">
                 <span class="check">
-                <input type="checkbox">
+                <input  type="checkbox">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
             </span>
-                <button class="btn1">SUBMIT</button>
+                <button class="btn1" onclick="sub()">SUBMIT</button>
                 
             </div>
         </div>
     </section>
 
 
-    <section class="service-sec">
+    <section id="home" class="service-sec">
+
+
+
+
+        <div class="popup" id="pop">
+            <div class="inner">hello</div>
+        </div>
+
+
+
+
+
 <span class="span1">SERVICES</span>
 <span class="sideblue"></span>
 <div class="allscards">
 <div class="uppercards">
-<div class="onecard">
+<div class="onecard" onclick="card()">
     <span>Cabin-Crew</span>
     <p>Discover more<i class="fa-solid fa-arrow-right-long"></i></p>
     <img src="https://media.istockphoto.com/id/637243664/photo/brussels-international-airport-belgium.jpg?s=612x612&w=0&k=20&c=P7iea9nAFFGBHPimZBs5Yx9GngUnELXOJcgEaaMzAAE=" alt="">
@@ -147,4 +160,5 @@
 </section>
     
 </body>
+<script src="srcipt.js"></script>
 </html>
